@@ -1,6 +1,12 @@
-var mapState = {
+"use strict";
+const mapState = {
     'entities': [],
-    'items': []
+    'items': [],
 };
-var el = document.getElementById('tablee').getElementsByTagName('tbody')[0];
+// This feels too simple
+function castExists(thing) {
+    return thing;
+}
+const el = castExists(document.getElementById('tablee')).getElementsByTagName('tbody')[0];
+el.insertRow();
 el.insertRow();
